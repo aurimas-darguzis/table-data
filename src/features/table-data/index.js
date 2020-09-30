@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useTableData from "./hooks";
 import "./tableData.css";
 
 export default function TableData() {
   const { data } = useTableData();
+
   const [pageStartPosition, setPageStartPosition] = useState(0);
   const [pageEndPosition, setPageEndPosition] = useState(20);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
-  function sortByKey(key) {
+  useEffect(() => {}, []);
+
+  function sortAscBy(key) {
+    return;
+  }
+
+  function sortDescBy(key) {
     return;
   }
 
